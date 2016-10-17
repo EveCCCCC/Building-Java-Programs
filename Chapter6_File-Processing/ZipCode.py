@@ -1,0 +1,17 @@
+read = open("C:\Users\difan\Desktop\CS11A\zipcode.csv", 'r')
+write = open("C:\Users\difan\Desktop\CS11A\zipcode.txt", 'w')
+read.readline()
+for line in read:
+    data = line.split(',')
+    if len(data) > 5:
+        write.write(data[0][1:-1])
+        write.write('\n')
+        write.write(data[1][1:-1])
+        write.write(", ")
+        write.write(data[2][1:-1])
+        write.write('\n')
+        write.write(data[3][1:-1])
+        write.write(' ')
+        write.write(data[4][1:-1])
+        write.write('\n')
+    write.write('\n')
